@@ -36,4 +36,4 @@ with sqlite3.connect("task35.db") as conn:
     """)
 
     df_summary = pd.read_sql("SELECT * FROM books_summary", conn)
-    df_summary.to_csv("summary.csv", index_label=False)
+    df_summary.to_csv("summary.csv", index=False)
